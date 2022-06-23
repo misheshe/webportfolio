@@ -4,8 +4,6 @@
     box-sizing: border-box;
 } */
 
-÷
-
 body {
     background-color: #2E3445;
 }
@@ -13,9 +11,9 @@ body {
     background-color: #525E65;
 }
 
-/* #skills, #gallery{
-    background-color: #2E3445;
-} */
+#navbar .navbar-nav a:hover {
+    color: #c75f42
+}
 
 .logo{
     height: 30vh;
