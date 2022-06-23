@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capstone : Contact</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- Google Font Reboto -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
-    />
+    />  -->
+
+    <!-- Google Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -21,43 +28,34 @@
   </head>
   <body>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg container-fluid px-5">
-      <a class="navbar-brand text-dark" href="#">SDT</a>
-      <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark" id="navbar">
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNav"
       >
-      <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse text-dark" id="navbarNav">
-      <ul class="navbar-nav ml-auto text-dark">
+        <ul class="navbar-nav">
           <li class="nav-item active">
-          <a class="nav-link" href="./index.html"
-              >Home <span class="sr-only">(current)</span></a
-          >
+            <a class="nav-link text-center active" href="./1index.html"
+              >Home</a
+            >
           </li>
-          <li class="nav-item text-dark">
-          <a class="nav-link" href="./skills.html">Skills</a>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="./2skills.html">Skills</a>
           </li>
-          <li class="nav-item text-dark">
-          <a class="nav-link" href="./gallery.html">Gallery</a>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="./3gallery.html">Gallery</a>
           </li>
-          <li class="nav-item text-dark">
-          <a class="nav-link" href="./contact.html">Contact</a>
+          <li class="nav-item">
+            <a class="nav-link text-center active" href="./4contact.html">Contact <span class="sr-only">(current)</span></a>
           </li>
-      </ul>
+        </ul>
       </div>
-  </nav>
+    </nav>
+    
+    <div class="text-dark min-vh-100 p-5 mt-5">
 
-    <div class="text-dark min-vh-100 p-5">
-
-        <h2 class="text-dark text-center">Contact Me</h2>
+        <h2 class="text-dark text-center">Get In Touch</h2>
+        <p class="text-center">Want to work together or have any questions?</p>
 
         <div class="row mt-3">
             <form class="col-12 offset-md-2 col-md-8 offset-xl-4 col-xl-4 p-3 rounded">
@@ -73,7 +71,32 @@
                     <label class="text-dark" for="message">Message :</label>
                     <textarea class="form-control" id="message" rows="7"></textarea>
                 </div>
-                <button type="submit" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Send Email</button>
+                <!-- <button type="submit" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Send Message</button> -->
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">
+                  Send Message
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Message Sent</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </form>
         </div>
 

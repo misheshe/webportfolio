@@ -1,14 +1,41 @@
-*{
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+} */
+
+÷
+
+body {
+    background-color: #2E3445;
+}
+#navbar {
+    background-color: #525E65;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: lightpink;
+#skills, #gallery{
+    background-color: #2E3445;
 }
 
-.gallery .div. img{
-    height: 50vh;
+#page {
+    background-color: #2E3445;
+    background-position: center;
+    background-size: cover;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    min-height:100vh;
+  }
+
+#greeting {
+    font-style: .70rem;
+    font-weight: bolder;
 }
+
+#desc {
+    font-size: 1rem;
+}
+
+/* #bg-image {
+    background-color: rgba(141, 157, 139, 0.4);
+    min-height:100vh;
+} */
