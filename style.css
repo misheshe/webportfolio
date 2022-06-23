@@ -13,12 +13,17 @@ body {
     background-color: #525E65;
 }
 
-#skills, #gallery{
+/* #skills, #gallery{
     background-color: #2E3445;
-}
+} */
 
+.logo{
+    height: 30vh;
+    width: 30vh;
+}
 #page {
-    background-color: #2E3445;
+    background-image: url(img/img-bg.jpg);
+    /* background-color: #2E3445; */
     background-position: center;
     background-size: cover;
     background-attachment:scroll;
@@ -35,7 +40,15 @@ body {
     font-size: 1rem;
 }
 
-/* #bg-image {
-    background-color: rgba(141, 157, 139, 0.4);
+#bg-image {
+    background-color: rgba(0, 0, 0, 0.60);
     min-height:100vh;
-} */
+}
+
+h3 {
+    font-size: 1rem;;
+}
+
+h2 {
+    font-size .80rem;
+}
